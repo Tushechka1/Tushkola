@@ -1,0 +1,177 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Ту Школа — школьные коины</title>
+  <meta name="description" content="Ту Школа — школьная валюта: коины за учёбу и добрые дела, которые можно потратить на обеды, привилегии и цель класса.">
+  <meta name="theme-color" content="#18193a">
+  <link rel="manifest" href="/manifest.webmanifest">
+  <link rel="icon" href="/icons/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="/icons/apple-touch-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@500;600;700;800;900&family=Unbounded:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/style.css">
+  <script src="/assets/i18n.js"></script>
+</head>
+<body data-title-key="meta.title">
+  <header class="site-header" id="top">
+    <div class="wrap">
+      <a class="logo" href="#top"><img src="/icons/icon.svg" alt=""><span data-i18n="brand">Ту Школа</span></a>
+      <nav class="site-nav">
+        <a href="#earn" data-i18n="nav.earn">Как заработать</a>
+        <a href="#spend" data-i18n="nav.spend">На что тратить</a>
+        <a href="#who" data-i18n="nav.who">Для кого</a>
+        <a href="#safety" data-i18n="nav.safety">Безопасность</a>
+      </nav>
+      <div class="header-actions">
+        <label class="lang-wrap">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15 15 0 0 1 0 20M12 2a15 15 0 0 0 0 20"/></svg>
+          <select class="lang-select" data-i18n-attr="aria-label:lang.label"></select>
+        </label>
+        <a class="btn btn-dark btn-sm" href="/app.html" data-i18n="btn.demo">Открыть демо</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="wrap">
+        <div>
+          <span class="kicker"><span class="coin"></span><span data-i18n="hero.kicker">Школьная валюта за хорошие дела</span></span>
+          <h1 data-i18n="brand">Ту Школа</h1>
+          <p class="lead" data-i18n="hero.lead"></p>
+          <div class="hero-cta">
+            <a class="btn btn-primary" href="/app.html" data-i18n="btn.demo">Открыть демо</a>
+            <a class="btn" href="/app.html#student" data-i18n="btn.student">Войти как ученик</a>
+          </div>
+          <p class="hero-note" data-i18n="hero.note"></p>
+          <button class="btn btn-ghost btn-sm" id="install-btn" hidden style="margin-top:14px;padding-left:0">📲 <span data-i18n="btn.install"></span></button>
+          <p class="hero-note" id="ios-hint" hidden style="margin-top:10px" data-i18n="install.ios"></p>
+        </div>
+        <div class="hero-visual" aria-hidden="true">
+          <div class="blob"></div>
+          <div class="float-coin fc1"></div>
+          <div class="float-coin fc2"></div>
+          <div class="float-coin fc3"></div>
+          <div class="phone">
+            <div class="phone-screen">
+              <div class="ph-top"><span data-i18n="brand">Ту Школа</span><span class="ph-avatar">А</span></div>
+              <div class="ph-balance"><small data-i18n="hero.card.balance">Баланс</small><strong>245<span class="coin"></span></strong></div>
+              <div class="ph-row"><span class="ph-ico" style="background:var(--mint-soft)">🤝</span><span data-i18n="hero.card.plus"></span><span class="plus">+15</span></div>
+              <div class="ph-row"><span class="ph-ico" style="background:var(--sky-soft)">📘</span><span data-i18n="earn.hw.t"></span><span class="plus">+5</span></div>
+              <div class="ph-goal"><span data-i18n="hero.card.goal"></span><div class="bar"><i style="width:62%"></i></div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="block" id="earn">
+      <div class="wrap">
+        <div class="section-head reveal">
+          <span class="eyebrow">01</span>
+          <h2 data-i18n="earn.title">Как заработать коины</h2>
+          <p data-i18n="earn.lead"></p>
+        </div>
+        <div class="earn-grid">
+          <article class="earn-card reveal"><div class="ico" style="background:var(--gold-soft)">⭐</div><h3><span data-i18n="earn.grade.t"></span><span class="amt">+10<span class="coin"></span></span></h3><p data-i18n="earn.grade.d"></p></article>
+          <article class="earn-card reveal"><div class="ico" style="background:var(--sky-soft)">📘</div><h3><span data-i18n="earn.hw.t"></span><span class="amt">+5<span class="coin"></span></span></h3><p data-i18n="earn.hw.d"></p></article>
+          <article class="earn-card reveal"><div class="ico" style="background:var(--mint-soft)">🤝</div><h3><span data-i18n="earn.help.t"></span><span class="amt">+15<span class="coin"></span></span></h3><p data-i18n="earn.help.d"></p></article>
+          <article class="earn-card reveal"><div class="ico" style="background:var(--tomato-soft)">🧹</div><h3><span data-i18n="earn.duty.t"></span><span class="amt">+10<span class="coin"></span></span></h3><p data-i18n="earn.duty.d"></p></article>
+          <article class="earn-card reveal"><div class="ico" style="background:var(--gold-soft)">🏆</div><h3><span data-i18n="earn.olymp.t"></span><span class="amt">+50<span class="coin"></span></span></h3><p data-i18n="earn.olymp.d"></p></article>
+          <article class="earn-card reveal"><div class="ico" style="background:var(--sky-soft)">📅</div><h3><span data-i18n="earn.streak.t"></span><span class="amt">+20<span class="coin"></span></span></h3><p data-i18n="earn.streak.d"></p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="block spend" id="spend">
+      <div class="wrap">
+        <div class="section-head reveal">
+          <span class="eyebrow">02</span>
+          <h2 data-i18n="spend.title">На что тратить</h2>
+          <p data-i18n="spend.lead"></p>
+        </div>
+        <div class="spend-grid">
+          <article class="spend-card reveal">
+            <div class="big">🍲</div>
+            <h3 data-i18n="spend.lunch.t">Обеды</h3>
+            <p data-i18n="spend.lunch.d"></p>
+            <div class="tags"><span class="tag"><span data-i18n="item.lunch.full"></span>&nbsp;· 40<span class="coin"></span></span><span class="tag"><span data-i18n="item.lunch.bake"></span>&nbsp;· 10<span class="coin"></span></span></div>
+          </article>
+          <article class="spend-card reveal">
+            <div class="big">🎟️</div>
+            <h3 data-i18n="spend.priv.t">Привилегии</h3>
+            <p data-i18n="spend.priv.d"></p>
+            <div class="tags"><span class="tag"><span data-i18n="item.priv.seat"></span>&nbsp;· 60<span class="coin"></span></span><span class="tag"><span data-i18n="item.priv.music"></span>&nbsp;· 30<span class="coin"></span></span></div>
+          </article>
+          <article class="spend-card reveal">
+            <div class="big">🔭</div>
+            <h3 data-i18n="spend.goal.t">Цель класса</h3>
+            <p data-i18n="spend.goal.d"></p>
+            <div class="tags" style="display:block;width:100%"><span class="tag" data-i18n="goal.default"></span><div class="bar" style="background:rgba(255,255,255,.6);height:14px;margin-top:12px"><i style="width:62%;background:var(--ink)"></i></div></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="block" id="who">
+      <div class="wrap">
+        <div class="section-head reveal">
+          <span class="eyebrow">03</span>
+          <h2 data-i18n="who.title">Для кого сайт</h2>
+        </div>
+        <div class="who-grid">
+          <a class="who-card reveal" href="/app.html#student"><div class="avatar" style="background:var(--sky-soft)">🎒</div><h3 data-i18n="role.student">Ученик</h3><p data-i18n="who.student.d"></p><span class="go">→</span></a>
+          <a class="who-card reveal" href="/app.html#parent"><div class="avatar" style="background:var(--tomato-soft)">👪</div><h3 data-i18n="role.parent">Родитель</h3><p data-i18n="who.parent.d"></p><span class="go">→</span></a>
+          <a class="who-card reveal" href="/app.html#teacher"><div class="avatar" style="background:var(--mint-soft)">🧑‍🏫</div><h3 data-i18n="role.teacher">Учитель</h3><p data-i18n="who.teacher.d"></p><span class="go">→</span></a>
+          <a class="who-card reveal" href="/app.html#admin"><div class="avatar" style="background:var(--gold-soft)">🏫</div><h3 data-i18n="role.admin">Администрация</h3><p data-i18n="who.admin.d"></p><span class="go">→</span></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="block safety" id="safety">
+      <div class="wrap safety-layout">
+        <div class="reveal">
+          <div class="section-head" style="margin-bottom:24px">
+            <span class="eyebrow">04</span>
+            <h2 data-i18n="safety.title">Безопасность</h2>
+            <p data-i18n="safety.lead"></p>
+          </div>
+          <div class="shield"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="M9 12l2 2 4-4"/></svg></div>
+        </div>
+        <div class="safety-list">
+          <div class="safety-item reveal"><span class="num">1</span><h3 data-i18n="safety.money.t"></h3><p data-i18n="safety.money.d"></p></div>
+          <div class="safety-item reveal"><span class="num">2</span><h3 data-i18n="safety.roles.t"></h3><p data-i18n="safety.roles.d"></p></div>
+          <div class="safety-item reveal"><span class="num">3</span><h3 data-i18n="safety.limits.t"></h3><p data-i18n="safety.limits.d"></p></div>
+          <div class="safety-item reveal"><span class="num">4</span><h3 data-i18n="safety.log.t"></h3><p data-i18n="safety.log.d"></p></div>
+          <div class="safety-item reveal"><span class="num">5</span><h3 data-i18n="safety.data.t"></h3><p data-i18n="safety.data.d"></p></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="block cta">
+      <div class="wrap">
+        <div class="cta-box reveal">
+          <h2 data-i18n="cta.title">Посмотрите, как это работает</h2>
+          <p data-i18n="cta.lead"></p>
+          <div class="hero-cta">
+            <a class="btn btn-dark" href="/app.html" data-i18n="btn.demo">Открыть демо</a>
+            <a class="btn" href="/app.html#student" data-i18n="btn.student">Войти как ученик</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <span data-i18n="footer.note">Ту Школа · демо-версия</span>
+      <label class="lang-wrap"><select class="lang-select" data-i18n-attr="aria-label:lang.label"></select></label>
+    </div>
+  </footer>
+
+  <script src="/assets/site.js"></script>
+</body>
+</html>
